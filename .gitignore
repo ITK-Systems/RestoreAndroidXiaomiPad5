@@ -54,3 +54,8 @@ $RECYCLE.BIN/
 
 # Temporary logs
 *.log
+
+# Cached APKs (downloaded on-demand by app)
+tools/apks/*.apk
+!tools/apks/.gitkeep
+

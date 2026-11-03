@@ -1,5 +1,3 @@
-# RestoreAndroidXiaomiPad5
-Khôi phục máy tính bản cài song song windows và android về măc đinh android
 # 📱 Xiaomi Pad 5 (nabu) - Android Restore Tool Pro
 
 Ứng dụng giao diện đồ họa (GUI) chuyên dụng trên máy tính Windows, giúp tự động hóa 100% quy trình **gỡ bỏ hoàn toàn Windows 11 & phân vùng khởi động ESP**, khôi phục bảng phân vùng chuẩn gốc (Qualcomm LUN0 GPT) và mở rộng phân vùng `userdata` về **100% dung lượng Android nguyên bản** (128GB hoặc 256GB).
