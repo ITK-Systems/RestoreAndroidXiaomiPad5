@@ -26,7 +26,7 @@ class MainWindow(QMainWindow):
 
     def __init__(self):
         super().__init__()
-        self.setWindowTitle(f"{APP_NAME} v{APP_VERSION}")
+        self.setWindowTitle(f"{APP_NAME} v{APP_VERSION} • Created by ITK")
         self.resize(980, 750)
         self.setMinimumSize(850, 650)
         self.setStyleSheet(DARK_THEME_QSS)
@@ -66,6 +66,18 @@ class MainWindow(QMainWindow):
         title_layout.addWidget(lbl_app_sub)
 
         header_layout.addLayout(title_layout, stretch=1)
+
+        badge_author = QLabel("Created by ITK")
+        badge_author.setStyleSheet("""
+            background-color: #2e1065;
+            color: #c084fc;
+            font-size: 12px;
+            font-weight: 700;
+            padding: 4px 10px;
+            border-radius: 6px;
+            border: 1px solid #581c87;
+        """)
+        header_layout.addWidget(badge_author)
 
         badge_ver = QLabel(f"v{APP_VERSION} Pro")
         badge_ver.setStyleSheet("""

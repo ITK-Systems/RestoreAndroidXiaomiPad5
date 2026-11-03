@@ -1,5 +1,5 @@
 # 📖 HƯỚNG DẪN SỬ DỤNG TOÀN TẬP - RESTORE MI PAD 5 PRO
-> **Cẩm nang khôi phục Android gốc từ Windows 11 Dual-Boot, dọn dẹp hệ thống và tối ưu hóa toàn diện cho Xiaomi Pad 5 (`nabu`)**
+> 🌟 **Created by ITK** • Cẩm nang khôi phục Android gốc từ Windows 11 Dual-Boot, dọn dẹp hệ thống và tối ưu hóa toàn diện cho Xiaomi Pad 5 (`nabu`)
 
 ---
 
@@ -213,6 +213,8 @@ Nếu cẩm nang và công cụ này giúp bạn khôi phục và tối ưu thà
 
 ---
 
-## 📄 GIẤY PHÉP & LỜI CẢM ƠN
-* Dự án dựa trên tài liệu kỹ thuật phân vùng của dự án mã nguồn mở **[erdilS/Port-Windows-11-Xiaomi-Pad-5](https://github.com/erdilS/Port-Windows-11-Xiaomi-Pad-5)**.
-* Phát hành theo giấy phép **MIT License**. Tự do sử dụng và đóng góp cho cộng đồng!
+## 📄 TÁC GIẢ & GIẤY PHÉP
+* **Tác giả phát triển:** **ITK** (Created by **ITK**)
+* **Repository:** [phanvietkhoa26/RestoreAndroidXiaomiPad5](https://github.com/phanvietkhoa26/RestoreAndroidXiaomiPad5)
+* **Dự án gốc tham khảo:** Tài liệu kỹ thuật phân vùng từ **[erdilS/Port-Windows-11-Xiaomi-Pad-5](https://github.com/erdilS/Port-Windows-11-Xiaomi-Pad-5)**.
+* **Bản quyền:** Phát hành theo giấy phép **MIT License**. Tự do sử dụng và đóng góp cho cộng đồng!

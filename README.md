@@ -1,4 +1,5 @@
 # 📱 Xiaomi Pad 5 (nabu) - Android Restore Tool Pro
+> 🌟 **Created by ITK** • Phiên bản Pro tự động hóa khôi phục & tối ưu Xiaomi Pad 5 (`nabu`)
 
 Ứng dụng giao diện đồ họa (GUI) chuyên dụng trên máy tính Windows, giúp tự động hóa 100% quy trình **gỡ bỏ hoàn toàn Windows 11 & phân vùng khởi động ESP**, khôi phục bảng phân vùng chuẩn gốc (Qualcomm LUN0 GPT) và mở rộng phân vùng `userdata` về **100% dung lượng Android nguyên bản** (128GB hoặc 256GB).
 
@@ -166,11 +167,87 @@ run.bat
 
 ## ☕ Ủng Hộ Tác Giả (Donate)
 
+Nếu công cụ này giúp ích cho bạn trong việc khôi phục chiếc Xiaomi Pad 5 mượt mà và trọn vẹn, bạn có thể mời mình một ly cà phê để tiếp thêm động lực duy trì và phát triển nhé! Cảm ơn bạn rất nhiều! ❤️.
+
+<div align="center">
+  <img src="assets/donate_qr.jpg" width="230" alt="VietQR Donate" style="border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);" />
+  <p><b>Quét mã VietQR / Napas 247 để ủng hộ</b></p>
+</div>
+
+---
+
+## 👤 Tác Giả & Bản Quyền (Author & Credits)
+
+* **Tác giả phát triển:** **ITK** (Created by **ITK**)
+* **Repository:** [phanvietkhoa26/RestoreAndroidXiaomiPad5](https://github.com/phanvietkhoa26/RestoreAndroidXiaomiPad5)
+* **Dự án gốc tham khảo:** [erdilS/Port-Windows-11-Xiaomi-Pad-5](https://github.com/erdilS/Port-Windows-11-Xiaomi-Pad-5)
+* **Giấy phép:** Phát hành theo giấy phép [MIT License](LICENSE). Tự do sử dụng và chia sẻ cho cộng đồng.
+
+
+
+
+---
+
+## 📂 Cấu Trúc Thư Mục Dự Án
+
+```text
+RestoreMiPad5/
+├── app.py                     # Entry point khởi chạy ứng dụng GUI PyQt6
+├── run.bat                    # Script 1-click tự động kiểm tra môi trường và mở app
+├── requirements.txt           # Danh sách các thư viện Python cần thiết
+├── core/                      # Bộ nhân xử lý logic ngầm
+│   ├── adb_fastboot.py        # Wrapper tương tác với ADB & Fastboot CLI
+│   ├── constants.py           # Định nghĩa cấu hình, đường dẫn, URLs tải APK
+│   ├── device_monitor.py      # Luồng theo dõi trạng thái cắm cáp USB thời gian thực
+│   └── restore_engine.py      # Động cơ tự động hóa nạp GPT, xóa phân vùng win/esp
+├── ui/                        # Toàn bộ giao diện người dùng Modern Dark Mode
+│   ├── main_window.py         # Cửa sổ chính và điều hướng các tab
+│   ├── restore_tab.py         # Tab 1: Khôi phục Android 1-Click
+│   ├── utility_apps_tab.py    # Tab 2: Kho tiện ích tuyển chọn cho Pad 5
+│   ├── app_manager_tab.py     # Tab 3: Gỡ bỏ Bloatware / Quản lý APK
+│   ├── display_tab.py         # Tab 4: Tinh chỉnh DPI & Khóa 120Hz
+│   ├── advanced_tab.py        # Tab 5: Tiện ích A/B Slot, Reboot, Driver
+│   ├── guide_tab.py           # Tab 6: Hướng dẫn tích hợp trong app
+│   ├── console_widget.py      # Widget hiển thị nhật ký lệnh trực tiếp
+│   ├── status_widget.py       # Thanh trạng thái kết nối màu sắc trực quan
+│   └── styles.py              # Bảng màu Dark Theme chuẩn QSS
+├── tools/                     # Công cụ nhị phân tích hợp sẵn
+│   ├── platform-tools/        # Bộ Google Platform-Tools (adb, fastboot)
+│   ├── gpt_both0.bin          # Bảng phân vùng gốc chuẩn Qualcomm LUN0
+│   └── apks/                  # Thư mục lưu trữ APK tiện ích tải về
+├── driver/                    # Bộ driver Qualcomm USB Driver (QUD)
+├── USER_GUIDE.md              # Cẩm nang hướng dẫn sử dụng & tối ưu chi tiết từ A-Z
+└── README.md                  # Giới thiệu tổng quan dự án
+```
+
+---
+
+## 📥 Tải Về & Cài Đặt (Clone Repository)
+
+```bash
+git clone https://github.com/phanvietkhoa26/RestoreAndroidXiaomiPad5.git
+cd RestoreAndroidXiaomiPad5
+run.bat
+```
+
+
+## ☕ Ủng Hộ Tác Giả (Donate)
+
 Nếu công cụ này giúp ích cho bạn trong việc khôi phục chiếc Xiaomi Pad 5 mượt mà và trọn vẹn, bạn có thể mời mình một ly cà phê để tiếp thêm động lực duy trì và phát triển nhé! Cảm ơn bạn rất nhiều! ❤️
 
 <div align="center">
   <img src="assets/donate_qr.jpg" width="230" alt="VietQR Donate" style="border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);" />
   <p><b>Quét mã VietQR / Napas 247 để ủng hộ</b></p>
 </div>
+
+---
+
+## 👤 Tác Giả & Bản Quyền (Author & Credits)
+
+* **Tác giả phát triển:** **ITK** (Created by **ITK**)
+* **Repository:** [phanvietkhoa26/RestoreAndroidXiaomiPad5](https://github.com/phanvietkhoa26/RestoreAndroidXiaomiPad5)
+* **Dự án gốc tham khảo:** [erdilS/Port-Windows-11-Xiaomi-Pad-5](https://github.com/erdilS/Port-Windows-11-Xiaomi-Pad-5)
+* **Giấy phép:** Phát hành theo giấy phép [MIT License](LICENSE). Tự do sử dụng và chia sẻ cho cộng đồng.
+
 
 

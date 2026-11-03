@@ -26,6 +26,7 @@ TARGET_CODENAME = "nabu"
 TARGET_DEVICE_NAME = "Xiaomi Pad 5"
 
 # App Info
-APP_NAME = "Xiaomi Pad 5 (nabu) - Android Restore Tool"
+APP_NAME = "Xiaomi Pad 5 (nabu) - Android Restore Tool Pro"
 APP_VERSION = "1.0.0"
-APP_AUTHOR = "RestoreMiPad5"
+APP_AUTHOR = "ITK"
+APP_SIGNATURE = "Created by ITK"

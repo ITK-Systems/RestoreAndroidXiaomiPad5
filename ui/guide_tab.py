@@ -82,6 +82,11 @@ class GuideTab(QWidget):
             <li>Chọn <b>Android Device</b> (hoặc Android Phone) -> chọn model <b>Android Bootloader Interface</b> -> bấm Next để cài đặt.</li>
             <li>Quay lại phần mềm và bấm nút <b>"Làm mới"</b>, thiết bị sẽ hiện ngay lập tức!</li>
         </ol>
+
+        <hr style="border: 0; height: 1px; background: #334155; margin: 20px 0;">
+        <p style="text-align: center; color: #94a3b8; font-size: 12px; margin: 0;">
+            🚀 <b>Xiaomi Pad 5 Android Restore Tool Pro</b> • Phát triển bởi <b>ITK</b> (Created by <b>ITK</b>)
+        </p>
         """
 
         browser.setHtml(html_content)
