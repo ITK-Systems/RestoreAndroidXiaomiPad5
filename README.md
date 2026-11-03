@@ -52,6 +52,12 @@
   - **Chuyển đổi Mật độ DPI**: Tùy chỉnh nhanh chế độ Laptop / Desktop (240 DPI), Đa nhiệm ghi chú (280 DPI), Mặc định gốc (320 DPI), Chữ to (360 DPI) hoặc nhập DPI tùy ý.
   - **Khóa Tần số quét 120Hz**: Ép máy chạy 120Hz mọi lúc, chống tình trạng hệ điều hành tự tụt xuống 60Hz khi xem YouTube/Web. Tùy chọn 90Hz, 60Hz và Dynamic thích ứng.
   - **Tối ưu tốc độ hiệu ứng (Animation Scale)**: Đặt 0.5x hoặc 0x để tối đa hóa độ mượt mà và tốc độ phản hồi trên màn hình 120Hz.
+- **Thủ Thuật & Tối Ưu Hóa Sau Khôi Phục (Post-Restore System Tweaks)**:
+  - **Chặn 100% quảng cáo & mã độc toàn hệ thống**: Tích hợp hướng dẫn cấu hình Private DNS siêu tốc Control D (`p2.freedns.controld.com`) và AdGuard (`dns.adguard-dns.com`) không tốn RAM, không tốn pin.
+  - **Xử lý triệt để Magisk tự sinh stub**: Hướng dẫn đóng băng (`pm disable-user`) daemon root ngầm hoặc nạp lại `boot.img` gốc chính hãng.
+  - **Kích hoạt Chế độ máy tính (Workstation Mode)**: Hướng dẫn mở khóa quyền tạo lối tắt màn hình chính HyperOS (`MIUIOP 10017`).
+  - **Phát âm thanh đồng thời 2 ứng dụng**: Bật tính năng nhiều nguồn âm thanh trong Xiaomi Sound Assistant.
+
 
 ---
 
@@ -110,3 +116,48 @@ Nếu bạn đã đưa máy về màn hình FASTBOOT nhưng ứng dụng vẫn b
 3. Chuột phải vào đó -> chọn **Update driver** -> **Browse my computer for drivers** -> **Let me pick from a list of available drivers on my computer**.
 4. Chọn danh mục **Android Device** (hoặc Android Phone) -> ở danh sách bên phải chọn model **Android Bootloader Interface** -> bấm **Next** để hoàn tất.
 5. Quay lại ứng dụng và bấm nút **🔄 Làm mới**, thiết bị sẽ được nhận diện ngay lập tức.
+
+---
+
+## 📂 Cấu Trúc Thư Mục Dự Án
+
+```text
+RestoreMiPad5/
+├── app.py                     # Entry point khởi chạy ứng dụng GUI PyQt6
+├── run.bat                    # Script 1-click tự động kiểm tra môi trường và mở app
+├── requirements.txt           # Danh sách các thư viện Python cần thiết
+├── core/                      # Bộ nhân xử lý logic ngầm
+│   ├── adb_fastboot.py        # Wrapper tương tác với ADB & Fastboot CLI
+│   ├── constants.py           # Định nghĩa cấu hình, đường dẫn, URLs tải APK
+│   ├── device_monitor.py      # Luồng theo dõi trạng thái cắm cáp USB thời gian thực
+│   └── restore_engine.py      # Động cơ tự động hóa nạp GPT, xóa phân vùng win/esp
+├── ui/                        # Toàn bộ giao diện người dùng Modern Dark Mode
+│   ├── main_window.py         # Cửa sổ chính và điều hướng các tab
+│   ├── restore_tab.py         # Tab 1: Khôi phục Android 1-Click
+│   ├── utility_apps_tab.py    # Tab 2: Kho tiện ích tuyển chọn cho Pad 5
+│   ├── app_manager_tab.py     # Tab 3: Gỡ bỏ Bloatware / Quản lý APK
+│   ├── display_tab.py         # Tab 4: Tinh chỉnh DPI & Khóa 120Hz
+│   ├── advanced_tab.py        # Tab 5: Tiện ích A/B Slot, Reboot, Driver
+│   ├── guide_tab.py           # Tab 6: Hướng dẫn tích hợp trong app
+│   ├── console_widget.py      # Widget hiển thị nhật ký lệnh trực tiếp
+│   ├── status_widget.py       # Thanh trạng thái kết nối màu sắc trực quan
+│   └── styles.py              # Bảng màu Dark Theme chuẩn QSS
+├── tools/                     # Công cụ nhị phân tích hợp sẵn
+│   ├── platform-tools/        # Bộ Google Platform-Tools (adb, fastboot)
+│   ├── gpt_both0.bin          # Bảng phân vùng gốc chuẩn Qualcomm LUN0
+│   └── apks/                  # Thư mục lưu trữ APK tiện ích tải về
+├── driver/                    # Bộ driver Qualcomm USB Driver (QUD)
+├── USER_GUIDE.md              # Cẩm nang hướng dẫn sử dụng & tối ưu chi tiết từ A-Z
+└── README.md                  # Giới thiệu tổng quan dự án
+```
+
+---
+
+## 📥 Tải Về & Cài Đặt (Clone Repository)
+
+```bash
+git clone https://github.com/phanvietkhoa26/RestoreAndroidXiaomiPad5.git
+cd RestoreAndroidXiaomiPad5
+run.bat
+```
+
