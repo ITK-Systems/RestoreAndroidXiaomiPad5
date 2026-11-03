@@ -147,6 +147,7 @@ RestoreMiPad5/
 │   ├── gpt_both0.bin          # Bảng phân vùng gốc chuẩn Qualcomm LUN0
 │   └── apks/                  # Thư mục lưu trữ APK tiện ích tải về
 ├── driver/                    # Bộ driver Qualcomm USB Driver (QUD)
+├── assets/                    # Hình ảnh, tài nguyên giao diện & QR Donate
 ├── USER_GUIDE.md              # Cẩm nang hướng dẫn sử dụng & tối ưu chi tiết từ A-Z
 └── README.md                  # Giới thiệu tổng quan dự án
 ```
@@ -160,4 +161,16 @@ git clone https://github.com/phanvietkhoa26/RestoreAndroidXiaomiPad5.git
 cd RestoreAndroidXiaomiPad5
 run.bat
 ```
+
+---
+
+## ☕ Ủng Hộ Tác Giả (Donate)
+
+Nếu công cụ này giúp ích cho bạn trong việc khôi phục chiếc Xiaomi Pad 5 mượt mà và trọn vẹn, bạn có thể mời mình một ly cà phê để tiếp thêm động lực duy trì và phát triển nhé! Cảm ơn bạn rất nhiều! ❤️
+
+<div align="center">
+  <img src="assets/donate_qr.jpg" width="230" alt="VietQR Donate" style="border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);" />
+  <p><b>Quét mã VietQR / Napas 247 để ủng hộ</b></p>
+</div>
+
 

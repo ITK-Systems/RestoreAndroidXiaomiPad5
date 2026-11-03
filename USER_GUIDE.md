@@ -203,6 +203,16 @@ Mặc định Android chỉ cho 1 app phát âm thanh tại một thời điểm
 
 ---
 
+## ☕ ỦNG HỘ TÁC GIẢ (DONATE)
+Nếu cẩm nang và công cụ này giúp bạn khôi phục và tối ưu thành công chiếc Xiaomi Pad 5, bạn có thể mời mình một ly cà phê qua mã VietQR / Napas 247 nhé! Sự ủng hộ của bạn là động lực rất lớn để hoàn thiện dự án. Xin chân thành cảm ơn! ❤️
+
+<div align="center">
+  <img src="assets/donate_qr.jpg" width="230" alt="VietQR Donate" style="border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);" />
+  <p><b>Quét mã VietQR / Napas 247 để ủng hộ</b></p>
+</div>
+
+---
+
 ## 📄 GIẤY PHÉP & LỜI CẢM ƠN
 * Dự án dựa trên tài liệu kỹ thuật phân vùng của dự án mã nguồn mở **[erdilS/Port-Windows-11-Xiaomi-Pad-5](https://github.com/erdilS/Port-Windows-11-Xiaomi-Pad-5)**.
 * Phát hành theo giấy phép **MIT License**. Tự do sử dụng và đóng góp cho cộng đồng!
